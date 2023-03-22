@@ -10,7 +10,7 @@ namespace DrillCRUD.Controllers
     [Route("[controller]")]
     public class DrillBlockController : ControllerBase
     {
-        private IDrillBlockService drillBlockService;
+        private readonly IDrillBlockService drillBlockService;
 
         public DrillBlockController(IDrillBlockService drillBlockService)
         {

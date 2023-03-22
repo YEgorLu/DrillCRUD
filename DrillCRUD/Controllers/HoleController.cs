@@ -9,7 +9,7 @@ namespace DrillCRUD.Controllers
     [Route("[controller]")]
     public class HoleController : ControllerBase
     {
-        private IHoleService holeService;
+        private readonly IHoleService holeService;
 
         public HoleController(IHoleService holeService)
         {
